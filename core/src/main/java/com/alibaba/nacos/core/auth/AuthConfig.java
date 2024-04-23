@@ -18,14 +18,13 @@ package com.alibaba.nacos.core.auth;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 /**
  * auth filter config.
  *
  * @author mai.jh
  */
-@Configuration
+//@Configuration
 public class AuthConfig {
 
     @Bean
