@@ -28,8 +28,14 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 @SpringBootApplication(scanBasePackages = {"com.alibaba.nacos.naming", "com.alibaba.nacos.core"})
 public class NamingApp {
-    
+
     public static void main(String[] args) {
         SpringApplication.run(NamingApp.class, args);
     }
+
+    /**
+     * 未走到 DispatcherServlet  因为拦截器未通过
+     * todo 了解下 spring security
+     * 利用了 filter 机制 真 filter 持有一些 virtualFilter 实现
+     */
 }
